@@ -1,0 +1,26 @@
+c4d76312b2ec9c977c7cf4058c9611e3
+
+Javascript map API: AIzaSyBbQ11MN_JZXjU87IJtS2yRpA7kuDtyRmo
+
+/**********************************************************/
+clear sky
+Clouds
+    few clouds
+    scattered clouds
+    broken clouds
+    overcast clouds
+
+rain
+    light rain
+    moderate rain
+    heavy intensity rain
+    very heavy rain
+    extreme rain
+    freezing rain
+    light intensity shower rain
+    shower rain
+    heavy intensity shower rain
+    ragged shower rain
+
+thunderstorm
+mist

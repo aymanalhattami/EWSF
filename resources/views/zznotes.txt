@@ -1,0 +1,2 @@
+password.blade.php => email.blade.php
+reset.blade.php => reset.blade.php

@@ -1,0 +1,782 @@
+/* project framework */
+@font-face{
+    font-family: clock;
+    src: url('../fonts/digital-7.ttf');
+}
+
+@font-face {
+    fotn-family: siteFont;
+    src: url('../fonts/cmunbi.ttf');
+}
+
+body{
+    background-color: #eee;
+    font-family: siteFont;
+}
+
+.main-color{
+    color: #f15a24 !important;
+}
+
+.second-color{
+    color: #929497 !important;
+}
+
+.color-black{
+    color: #222;
+}
+
+.color-red{
+    color: rgba(223, 0, 0, 0.96);
+}
+
+.color-blue{
+    color: #222f46
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+.background-blue{
+    background-color: #222f46 !important;
+}
+
+.main-background-light{
+    background-color: #fb9b6d !important;
+}
+
+.main-background{
+    background-color: #f15a24 !important;
+}
+
+.background-white{
+    background-color: #ffffff;
+}
+
+.background-eee{
+    background-color: #eee !important;
+}
+
+.second-background{
+    /*background-color: #F4645F !important;*/
+}
+
+.control-label{
+    /*text-align: left !important;*/
+}
+
+.btn, .panel, .form-control, .panel-heading, .btn-group-sm>.btn, .btn-sm, .input-group-addon, .alert{
+    border-radius: 0px;
+}
+
+.panel.panel-primary, 
+.panel.panel-primary .panel-heading{
+    border-color: #fe892d
+}
+
+.shodow{
+    /*box-shadow: 10px 10px 5px #e6e3e3;*/
+}
+
+/* /dashboard.blade.php */
+
+.cls-weigh-size{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table-responsive table th{
+    background-color: #222f46;
+    color: #eee;
+}
+
+.table-responsive table td{
+    background-color: #fff;
+}
+
+.arduino1-min-mean-max,
+.arduino2-min-mean-max{
+    margin-top: 33%;
+}
+
+.input-group-addon{
+    background-color: transparent;
+    border: 0px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.form-control{
+    border-left: 0px !important;
+}
+
+.dash-weather{
+    /*border-top: 2px solid #f15a24;*/
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+/**********************************/
+/* bubble */
+.bubble{
+    margin-bottom: 20px;
+}
+
+.bubble-head{
+    /*width: 200px;*/
+    /*height: 50px;*/
+    background-color: #f15a24;
+    color: #ddd;
+    padding: 5px 10px 5px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+.bubble-head:after{
+    content: '';
+    display: block;
+    width: 0;
+    border-width: 30px 0px 0px 30px;
+    border-style: solid;
+    border-color: #eee #f15a24;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bubble-body{
+    /*width: 200px;*/
+    /*height: 100px;*/
+    background-color: #fff;
+    position: relative;
+    color: #333;
+    overflow: hidden;
+    padding: 10px 10px 10px 20px;
+}
+
+.bubble-body:after{
+    content: "";
+    display: block;
+    width: 0;
+    border-width: 0px 0px 20px 20px;
+    border-style: solid;
+    border-color: #eee #f00;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: -5px -2px 11px #f15a24
+}
+
+.bubble-body:before{
+    content: '';
+    display: block;
+    width: 0;
+    border-width: 0px 0px 15px 15px;
+    border-style: solid;
+    border-color: #fff #f15a24;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/**********************************/
+ h3{
+     padding: 0;
+     margin: 0;
+ }
+
+
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/* navbar in[app.blade.php] */
+.navbar-brand{
+    height: auto;
+}
+
+.nav-item{
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s linear;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #fe7323 !important;
+    color: #fe7323 !important;
+}
+
+.nav-item-login{
+    transition: all 0.5s linear;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-item-login:hover{
+    color: #fe7323 !important;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.nav-logo{
+    margin-left: -50px !important;
+    padding: 5px 0px 5px 0px !important;
+}
+
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/* font-awesome */
+.fa-sign-in,
+.fa-user-plus,
+.fa-user,
+.fa-sign-out{
+    color: #fe7323
+}
+
+
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/* dashboard.blade.php */
+.msg-feedback{
+    border-left: 4px solid #a94442;
+}
+
+.weather-status .panel-heading{
+    background-image: url(../images/diamond.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: padding-box;
+    
+}
+
+.weather-status .panel-title{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.weather-status .panel-body{
+    padding-bottom: 0px;
+}
+
+.city{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.time{
+    font-family: clock;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.date{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.day{
+    border-left: 5px solid #fe892d;
+    background-color: #EEE;
+    margin-top: 20px;
+    padding-top: 7px;
+    overflow: hidden;
+}
+
+.hands{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sensor-avg .panel-primary,
+.sensor-avg .panel-heading,
+.sensor-avg .panel-footer,
+.alert-status .panel-primary,
+.alert-status .panel-heading,
+.alert-status .panel-footer{
+    border: none;
+}
+
+.sensor-avg .panel-heading{
+    background-color: #f15a24;
+}
+
+.sensor-avg .panel-body{
+    /*background-color: rgb(30, 113, 69);*/
+    color: #f15a24;
+}
+
+.sensor-avg .panel-body div.sensor-value{
+    border: 15px solid #929497;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 65px;
+}
+
+.sensor-avg .panel-footer{
+    /*background-color: rgb(27, 101, 62);*/
+    color: #eee;
+}
+
+.alert-status .panel-heading{
+    background-color: #f4432c;
+}
+
+.alert-status .panel-footer{
+    background-color: #f1b4ac;
+}
+
+.alert-status .color-red{
+    color: darkred;
+    font-weight: bold;  
+}
+
+.alert-status .color-black{
+    color: #111;
+    font-weight: 700
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* chart.blade.php */
+.chart{
+    margin-top: 30px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* report.blade.php */
+.report-control{
+    margin-top: 10px;
+}
+
+.dropdown-menu{
+    right: 0 !important;
+    left: auto;
+}
+
+.report-data{
+    /*margin-top: 20px;*/
+}
+
+.export{
+    margin-top: 20px;
+}
+
+.h4-padding{
+    padding-top: 2px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* sidebar */
+.sidebar{
+    margin-left: -15px;
+    margin-top: 50px;
+    background-color: #eee;
+    height: 700px !important;
+}
+
+.sidebar{
+    will-change: min-height;
+}
+
+.sidebar-element{
+    border-left: 4px solid #eee;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.5s linear;
+    border-bottom: 2px solid #fff;
+}
+
+.sidebar-element{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
+.sidebar-element a{
+    text-decoration: none;
+}
+
+.sidebar-element:hover{
+    border-left: 4px solid #fe892d;
+    border-bottom: 2px solid #222;
+    background-color: #fff;
+}
+
+.sidebar-element-focus{
+    border-left: 4px solid #fe892d;
+    border-bottom: 2px solid #222;
+    background-color: #fff;
+}
+
+.sidebar-element:hover a{
+    color: #222;
+}
+
+.sidebar-border-left{
+    border-left: 4px solid #fe892d;
+}
+
+.separator{
+    height: 15px;
+    background-color: #222f46;
+}
+
+.sidebar-fa{
+    padding-top: 6px;
+}
+
+/* content */
+.content{
+    margin-top: 70px !important;
+    /*height: 2000px;*/
+}
+
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* reportPDF.blade.php */
+.report-to-pdf table tr,
+.report-to-pdf table tr th,
+.report-to-pdf table tr td{
+    border: 1px solid #000;
+}
+
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* login.blade.php */
+.login-divider, .register-divider{
+    border-top: 1px solid #111;
+    padding-top: 10px;
+}
+
+.login .input-group-addon{
+    border-radius: 0;
+}
+
+.panel-login{
+    border-left: 3px solid #fe892d;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* register.blade.php */
+.register .input-group-addon{
+    border-radius: 0;
+}
+
+
+.panel-register{
+    border-left: 3px solid #fe892d
+}
+/********************************************************************************************************/
+/********************************************************************************************************/
+
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* weather.blade.php */
+.weather-report h3{
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.panel-border-left{
+    border-left: 2px solid #fe892d;
+}
+
+.weather-data{
+    background-color: #ffffff !important;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.weather-data .w-time-date{
+    margin: 0;
+    border-right: 2px solid #eee;
+    /*padding: 10px;*/
+    color: #6f7182;
+}
+
+.weather-data .w-time{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.weather-data .w-date{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0
+}
+
+.weather-data .w-day-wind-humi{
+    border-right: 2px solid #eee;
+}
+
+.weather-data .w-day{
+    color: #f15a24;;
+}
+
+.weather-data .w-wind,
+.weather-data .w-humi{
+    color: #6f7182;
+    font-weight: bold;
+}
+
+.weather-data .w-desc{
+    font-weight: bold;
+    color: #6f7182;
+}
+
+.weather-data .fa-smile-o{
+    font-weight: bold;
+}
+
+.weather-data .w-temp{
+    font-size: 25px;
+    font-weight: bold;
+    color: #6f7182;
+}
+
+.weather-data sub{
+    font-weight: normal;
+    font-size: 12px;
+    bottom: -0.35em;
+    left: 0.5em;
+    color: #ccc;
+}
+
+.weather-data sup{
+    font-weight: normal;
+    font-size: 12px;
+    top: -.9em;
+}
+
+.weather-data sup .fa-circle-o{
+    font-size: 10px;
+}
+
+.weather-data sup:first-child{
+    top: -1.0em;
+    left: 0.2em;
+    font-weight: bolder;
+}
+
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* breadcrumb */
+.title-breadcrumb{
+    /*border: 1px solid red;*/
+    height: 50px;
+    background-color: #fff;
+    margin-top: -20px;
+}
+
+.title-breadcrumb h2{
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    font-weight: bold;
+}
+
+.title-breadcrumb .breadcrumb{
+    background-color: inherit;
+    padding-top: 12px;
+}
+
+.title-breadcrumb .breadcrumb{
+    font-size: 20px;
+}
+
+.title-breadcrumb h2 small{
+    font-size: 16px;
+    color: #aaa;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* offline_chart */
+.offline-chart{
+    margin-top: 30px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* sensorDetails.blade.php */
+.device-detail{
+    border-left: 3px solid #f15a24;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.content-separator{
+    border-top: 3px solid #f15a24;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content-separator img{
+    width: 100px;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: -14px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* users/edit.blade.php */
+.side-effect{
+    border-left: 3px solid #f15a24;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 40px;
+}
+
+.user-search .input-group-addon{
+    background-color: #fff;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* users/index.blade.php */
+.user-settings{
+
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* footer section */
+footer{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 5px solid #f15a24;
+    background-color: #fff;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* reset.blade.php */
+.content-reset{
+    border: 1px solid red;
+    margin-top: 200px;
+}
+
+.panel-reset{
+    border-left: 3px solid #f15a24;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* maps/maps.blade.php */
+#map{
+    width: 1000px;
+    height: 600px;
+}
+
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* about.blade.php */
+.content-about{
+    margin-top: 20px;
+}
+
+.content-about .about-team{
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.about-img{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.about-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.about-img h3{
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* auditing.blade.php */
+.auditing-chart{
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.auditing-breadcrumb{
+    margin-top: -42px !important;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/* responsive */
+@media(max-width: 767px){
+    /* navbar + sidebar */
+    .nav-logo img{
+        width: 100px;
+        margin-left: 70px;
+        margin-top: 8px;
+    }
+
+    .weather-status .panel-heading{
+        background-color: #222f46;
+    }
+
+    .ele-border-top{
+        border-top: 2px solid #f15a24;
+        margin-top: 5px;
+    }
+
+    /* footer */
+    footer img{
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* reports */
+    .report-date{
+        margin-bottom: 20px;
+    }
+
+    /* sensor-details (device status) */
+    .d-alarm{
+        margin-bottom: 20px;
+    }
+
+    /* weather */
+    .w-day-wind-humi{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

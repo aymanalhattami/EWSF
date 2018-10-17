@@ -1,0 +1,8 @@
+[1] report.blade.php => excel report
+[2] alert.blade.php => 0
+[3] sensor.blade.php =>
+[4] weather.blade.php => weather chart from the internet
+[5] dashboard.blade.php =>
+[6] chart.blade.php =>
+[7] login =>
+[8] register =>
